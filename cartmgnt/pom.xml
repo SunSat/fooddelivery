@@ -12,9 +12,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <groupId>com.anisat.food</groupId>
-    <artifactId>cardmgnt</artifactId>
+    <artifactId>cartmgnt</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cardmgnt</name>
+    <name>cartmgnt</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
