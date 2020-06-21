@@ -1,0 +1,448 @@
+{
+	"info": {
+		"_postman_id": "c7aa28a9-c9fc-4b30-9896-864321503935",
+		"name": "FoodDelivery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserService",
+			"item": [
+				{
+					"name": "createnewuser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"HOTEL\",\n    \"hotelName\": \"Bhurai\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"CUSTOMER\",\n    \"hotelName\": \"\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"CUSTOMER\",\n    \"hotelName\": \"\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Food Service",
+			"item": [
+				{
+					"name": "Post New Food",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"CUSTOMER\",\n    \"hotelName\": \"\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/food",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"food"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"CUSTOMER\",\n    \"hotelName\": \"\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/food",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"food"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"CUSTOMER\",\n    \"hotelName\": \"\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/food/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"food",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Order Service",
+			"item": [
+				{
+					"name": "Post New Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"orderId\":4,\n\t\"userId\":1,\n\t\"restaruntId\":1,\n\t\"cost\":200.0,\n\t\"overAllStatus\":\"CREATED\",\n\t\"address\":\"delivery address\",\n\t\"foodId\":1,\n\t\"qty\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/v1/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All Order",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"CUSTOMER\",\n    \"hotelName\": \"\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"CUSTOMER\",\n    \"hotelName\": \"\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/food/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"food",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Orchestrator Service",
+			"item": [
+				{
+					"name": "Get All Orders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"orderId\":3,\n\t\"userId\":1,\n\t\"restaruntId\":1,\n\t\"cost\":200.0,\n\t\"overAllStatus\":\"CREATED\",\n\t\"address\":\"delivery address\",\n\t\"foodId\":1,\n\t\"qty\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/orchestrator/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"orchestrator",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All Order",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"CUSTOMER\",\n    \"hotelName\": \"\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"kumar\",\n    \"password\": \"kumar\",\n    \"name\": \"sathihs\",\n    \"phone\": \"+91887748\",\n    \"emailId\": \"kshjdf@gmail.com\",\n    \"address\": \"fsfsfsdf\",\n    \"place\": \"chennai\",\n    \"userType\": \"CUSTOMER\",\n    \"hotelName\": \"\",\n    \"bikeNo\": \"\",\n    \"licenseDetails\": \"\",\n    \"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/food/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"food",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "57447f3d-37d6-440b-a6dc-22735180674e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce528062-7cc1-4256-9f95-471ffd5c4400",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
