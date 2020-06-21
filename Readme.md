@@ -21,35 +21,34 @@ Steps to run the entire food application.
 
 #Step 1 : Install Kafka as Docker:
 
-git clone https://github.com/wurstmeister/kafka-docker
-DOCKERHOST=$(ifconfig | grep -E "([0-9]{1,3}\.){3}[0-9]{1,3}" | grep -v 127.0.0.1 | awk '{ print $2 }' | cut -f2 -d: | head -n1)
-echo $DOCKERHOST
+    git clone https://github.com/wurstmeister/kafka-docker
+    DOCKERHOST=$(ifconfig | grep -E "([0-9]{1,3}\.){3}[0-9]{1,3}" | grep -v 127.0.0.1 | awk '{ print $2 }' | cut -f2 -d: | head -n1)
+    echo $DOCKERHOST
 
-cd kafka-docker
-vi docker-compose-single-broker.yml
+    cd kafka-docker
+    vi docker-compose-single-broker.yml
 
 --replace the new ip against below property.
-KAFKA_ADVERTISED_HOST_NAME: <new IP>
+    KAFKA_ADVERTISED_HOST_NAME: <new IP>
 
-docker-compose -f ./docker-compose-single-broker.yml up -d
-docker exec -t kafka-docker_kafka_1 kafka-topics.sh  --bootstrap-server :9092  --create  --topic ORDERSTATUSUPDATES --partitions 1  --replication-factor 1
+    docker-compose -f ./docker-compose-single-broker.yml up -d
+    docker exec -t kafka-docker_kafka_1 kafka-topics.sh  --bootstrap-server :9092  --create  --topic ORDERSTATUSUPDATES --partitions 1  --replication-factor 1
 
 The above steps will start and run kafka server in port 9092 port with the topci name ORDERSTATUSUPDATES.
 
 #Step 2 : build the project:
 
-cd project_directory 
-mvn clean install -DskipTests
+    cd project_directory 
+    mvn clean install -DskipTests
 
 #Step 3 : Start Micro Service one by one as below.
 mvn clean install -DskipTests create new folder called finalJar and copy all the required jars into it.
 
-cd <project_baseDirectory>/finaljar
-
-java -jar orchestrator.jar
-java -jar foodmgmt.jar 
-java -jar ordermgnt.jar
-java -jar usermgnt.jar
+    cd <project_baseDirectory>/finaljar
+    java -jar orchestrator.jar
+    java -jar foodmgmt.jar 
+    java -jar ordermgnt.jar
+    java -jar usermgnt.jar
 
 #Setp 4 : Download postmand collection and load. All the required data will be prepopulated already.
 Execute Get/GetAll operation in Postman to check all the api's working as expected.
