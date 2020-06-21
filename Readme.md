@@ -46,12 +46,19 @@ mvn clean install -DskipTests create new folder called finalJar and copy all the
 
     cd <project_baseDirectory>/finaljar
     java -jar orchestrator.jar
-    java -jar foodmgmt.jar 
+        //orchestrator start in Port 8080
+        
+    java -jar foodmgmt.jar
+        //orchestrator start in Port 8082
+         
     java -jar ordermgnt.jar
+        //orchestrator start in Port 8083
+        
     java -jar usermgnt.jar
+        //orchestrator start in Port 8081
 
 #Setp 4 : Download postmand collection and load. All the required data will be prepopulated already.
-Execute Get/GetAll operation in Postman to check all the api's working as expected.
+    Execute Get/GetAll operation in Postman to check all the api's working as expected.
 
 #Step 5 : The actual flow is this.
 
